@@ -25,6 +25,10 @@ class User extends Authenticatable
         'password',
     ];
 
+    public function customser(){
+        return $this->hasMany(Customer::class);
+    }
+
     /**
      * The attributes that should be hidden for serialization.
      *
